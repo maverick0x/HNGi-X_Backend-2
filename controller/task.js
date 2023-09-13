@@ -73,6 +73,8 @@ const updatePerson = async (req, res) => {
                 name,
                 email,
                 gender,
+            }, {
+                runValidators: true
             });
 
             // Return a success message
@@ -114,6 +116,8 @@ const deletePerson = async (req, res) => {
     }
 }
 
+
+// Export the controller functions
 module.exports = {
     createPerson,
     getPerson,
