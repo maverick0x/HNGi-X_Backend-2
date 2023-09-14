@@ -7,7 +7,7 @@ You are to build a simple REST API capable of CRUD operations on a "person" reso
 To use the server you'll have to clone the repository and get your MONGO_URI
 
 **To get MONGO_URI**
-- Go to [MongoDB website and register for a serverless free account](https://www.mongodb.com/cloud/atlas/register).
+- Go to [MongoDB website and register for a serverless free account](http://www.mongodb.com/cloud/atlas/register).
 - Create a free database using shared cluster.
 - After the DB has been created, Click on **connect**.
 - Select **Driver**.
