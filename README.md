@@ -21,7 +21,7 @@ After adding your connection string, you can then run the server in development 
 ### Using the REST API
 
 Base URL (in production mode): [http://hngix-task2.eu-4.evennode.com](http://hngix-task2.eu-4.evennode.com).
-- The link is http://hngix-task2.eu-4.evennode.com not ~https://hngix-task2.eu-4.evennode.com~
+- The link is http://hngix-task2.eu-4.evennode.com not ~https://hngix-task2.eu-4.evennode.com~.
 There are four endpoints
 1. [```/api```](http://hngix-task2.eu-4.evennode.com/api) - POST Method - For creating a person. It takes a compulsory variable ```name``` and two other optional variables; ```gender``` and ```email```.
 #### Sample
