@@ -13,11 +13,11 @@ require('dotenv').config();
 // Use json middleware to accept json input
 app.use(express.json());
 // link task router to '/api' endpoint
-app.use('/api', task)
+app.use('/api', task);
 
 
 // Define the port to use in both production and localhost
-const PORT = process.env.PORT | 3000;
+const PORT = process.env.PORT || 3000;
 
 // Create a helper function that ensures the server won't start
 // unless the connection to MongoDB is successful
