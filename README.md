@@ -3,7 +3,7 @@
 ## Task
 You are to build a simple REST API capable of CRUD operations on a "person" resource, interfacing with any database of your choice. Your API should dynamically handle parameters, such as adding or retrieving a person by name. Accompany the development with UML diagrams to represent your system's design and database structure.  Host your entire project on GitHub, and provide a well-structured documentation in the repository that outlines request/response formats, setup instructions, and sample API usage.
 
-### Steps to run the server
+### Steps to setup the server
 To use the server you'll have to clone the repository and get your MONGO_URI
 
 **To get MONGO_URI**
@@ -19,8 +19,11 @@ To use the server you'll have to clone the repository and get your MONGO_URI
 After adding your connection string, you can then run the server in development mode using  ```npm run dev``` or run it in production mode using  ```npm start```
 
 ### Using the REST API
+
+Base URL (in production mode): [http://hngix-task2.eu-4.evennode.com](http://hngix-task2.eu-4.evennode.com)
+
 There are four endpoints
-1. ```/api``` - POST Method - For creating a person. It takes a compulsory variable ```name``` and two other optional variables; ```gender``` and ```email```.
+1. [```/api```](http://hngix-task2.eu-4.evennode.com/api) - POST Method - For creating a person. It takes a compulsory variable ```name``` and two other optional variables; ```gender``` and ```email```.
 #### Sample
 Create new Person
 ```
@@ -76,7 +79,7 @@ Create new Person
       }
 ```
 
-2. ```/api/:user_id``` - GET Method - For getting the details of a person using their name as input variable.
+2. [```/api/user_id```](http://hngix-task2.eu-4.evennode.com/api/user_id) - GET Method - For getting the details of a person using their name as input variable.
 #### Sample
 Get a person
 ```
@@ -116,7 +119,7 @@ Get a person
        }
 ```
 
-3. ```/api/:user_id``` - PATCH Method - For upating details of the user. N.B.: All details can be modified.
+3. [```/api/user_id```](http://hngix-task2.eu-4.evennode.com/api/user_id) - PATCH Method - For upating details of the user. N.B.: All details can be modified.
 #### Sample
 Update a person
 ```
@@ -161,7 +164,7 @@ Calling the endpoint again with the same **user_id** after updating will result 
 
 Because we've changed the name hence the **user_id** to get the details have changed too.
 
-4. ```/api:user_id``` - DELETE Method - For deleting a person.
+4. [```/api/user_id```](http://hngix-task2.eu-4.evennode.com/api/user_id) - DELETE Method - For deleting a person.
 
 ```
     Request:
